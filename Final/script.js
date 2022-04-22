@@ -1,5 +1,5 @@
-$('.carousel').carousel({
-  interval: 6000,
-  wrap:true,
-  keyboard:true,
-});
+// $('.carousel').carousel({
+//   interval: 6000,
+//   wrap:true,
+//   keyboard:true,
+// });
