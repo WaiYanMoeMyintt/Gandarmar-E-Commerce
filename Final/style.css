@@ -214,11 +214,11 @@ body{
    background-color: var(--primary-color);
    width: 100%;
    height: auto;
-   position: sticky;
-   top:0;
-   z-index: 999;
+   position:sticky;
+   top: 0;
+   z-index: 99;
    padding:0 auto;
-   transform: translateY(-20px);
+   transform: translateY(-18px);
 }
 .nav-sec-3 .row-nav-bar{
    display: flex;
@@ -304,16 +304,17 @@ body{
 main {
    position: relative;
    width: 100%;
-   padding:0 15px;
+   padding:0 8px;
 }
+
 main .main-sub-section{
    background-image: url("../Assets/market_banner5.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size:cover;
    border-radius: 20px;
-   height: 350px;
-   width: 60%;
+   height: 320px;
+   width: 51%;
    display: block;
 }
 main .main-sub-section h3{
@@ -346,14 +347,102 @@ main .main-sub-section a {
    letter-spacing: .2px;
    padding:10px 0;
 }
+.market-banner{
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   transform: translate(-18px,-20px);
+}
+
+.market-banner .market-banner-2{
+   display: flex;
+   transform: translateX(-20px);
+}
+.market-banner .market-banner-1{
+   display: flex;
+   flex-wrap: nowrap;
+}
+.market-banner .market-banner-1,.market-banner .market-banner-2{
+   gap: 18px;
+   width: 350px;
+}
 .main .main-sub-section a:hover, .main .main-sub-section a:active{
    background-color: #16BCDC;
    color: #fff;
    border: 2px solid #16BCDC;
    box-shadow: none;
 }
-/* main .main-sub{
-   display:flex;
-   justify-content: space-between;
-   flex-direction: column;
-} */
+.market-banner .market-banner-1 .market-sub-banner-1,
+.market-banner .market-banner-1 .market-sub-banner-2,
+.market-banner .market-banner-2 .market-sub-banner-3,
+.market-banner .market-banner-2 .market-sub-banner-4
+{
+   cursor: pointer;
+}
+.market-banner .market-banner-1,.market-banner-2{
+   display: flex;
+   align-items: center;
+   column-gap: 50px;
+   flex-flow:row wrap;
+   margin: 20px 30px;
+}
+.market-banner-1 .market-sub-banner-1{
+   background-image: url("../Assets/market_banner4.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 400px;
+   height: 150px;
+   border-radius: 20px;
+}
+.market-banner-1 .market-sub-banner-2{
+   background-image: url("../Assets/market_banner2.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 400px;
+   height: 150px;
+   border-radius: 20px;
+}
+.market-banner-2 .market-sub-banner-3{
+   background-image: url("../Assets/market_banner1.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 400px;
+   height: 150px;
+   border-radius: 20px;
+}
+.market-banner-2 .market-sub-banner-4{
+   background-image: url("../Assets/market_banner6.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 400px;
+   height: 150px;
+   border-radius: 20px;
+}
+
+.market-banner-1 .market-sub-banner-1 h5,p ,
+.market-banner-1 .market-sub-banner-2 h5,p,
+.market-banner-2 .market-sub-banner-3 h5,p,
+.market-banner-2 .market-sub-banner-4 h5,p
+{
+   color: #fff;
+   padding:10px 20px;
+   transform: translate(8px,20px);
+}
+.market-banner-1 .market-sub-banner-1 h5,
+.market-banner-1 .market-sub-banner-2 h5,
+.market-banner-2 .market-sub-banner-3 h5,
+.market-banner-2 .market-sub-banner-4 h5
+{
+   font-size: 1.6rem;
+   font-weight: 600;
+}
+.market-banner-1 .market-sub-banner-1 p,
+.market-banner-1 .market-sub-banner-2 p
+{
+   font-size: 1.1rem;
+   font-weight: 500;
+}
