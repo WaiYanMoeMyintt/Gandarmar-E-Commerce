@@ -546,11 +546,11 @@ main .main-sub-section a {
    background-color:rgb(0,122,209);
    position: absolute;
    top: 10px;
-   left: 5px;
+   left: 3px;
    color: #fff;
    padding:0 6px;
    font-size: .7rem;
-   border-radius: 3px;
+   border-radius: 4px;
 }
 
 .product-item-1 a img,
@@ -681,5 +681,74 @@ main .main-sub-section a {
 {
    background-color:rgb(21, 161, 189);
 }
+/* product-item section end  */
 
-/* product-item section start  */
+/* market-sub-banner-section start  */
+.container-fluid .market-sub {
+   padding:0 40px;
+   height: 160px;
+   display: grid;
+   grid-gap: 30px;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.market-sub .market-sub-banner-1{
+   background-image: url("../Assets/market-sub-banner-1.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 12px;
+   cursor: auto;
+   user-select: none;
+}
+
+.market-sub .market-sub-banner-2{
+   background-image: url("../Assets/market-sub-banner-2.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 12px;
+   cursor: auto;
+   user-select: none;
+}
+.market-sub .market-sub-banner-3{
+   background-image: url("../Assets/market-sub-banner-3.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 12px;
+   cursor: auto;
+   user-select: none;
+}
+.market-sub .market-sub-banner-1 h3,p,
+.market-sub .market-sub-banner-2 h3,p,
+.market-sub .market-sub-banner-3 h3,p
+{
+    color: #fff;
+    transform: translate(20px,15px);
+}
+.market-sub .market-sub-banner-1 h3,
+.market-sub .market-sub-banner-2 h3,
+.market-sub .market-sub-banner-3 h3
+{
+   font-weight: 550;
+   letter-spacing: .5px;
+}
+.market-sub .market-sub-banner-1 p,
+.market-sub .market-sub-banner-2 p,
+.market-sub .market-sub-banner-3 p
+{
+   transform: translateY(25px);
+}
+.market-sub .market-sub-banner-1,
+.market-sub .market-sub-banner-2,
+.market-sub .market-sub-banner-3
+{
+   transition: opacity .4s ease;
+}
+.market-sub .market-sub-banner-1:hover,
+.market-sub .market-sub-banner-2:hover,
+.market-sub .market-sub-banner-3:hover
+{
+   opacity: .85;
+}
+/* market-sub-banner-section end  */
