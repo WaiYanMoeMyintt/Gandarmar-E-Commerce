@@ -500,11 +500,16 @@ main .main-sub-section a {
 .container-fluid .product-container{
    padding:0 8px;
    transform: translateY(20px);
+   height: auto;
+   width: 100%;
+
 }
 /* product-item section start  */
 .container-fluid .product-container .product-item-1,
-.container-fluid .product-container .product-item-2
-
+.container-fluid .product-container .product-item-2,
+.container-fluid .product-container .product-item-3,
+.container-fluid .product-container .product-item-4,
+.container-fluid .product-container .product-item-5
 {
    padding: 0 30px;
    background-color:#fff;
@@ -518,28 +523,59 @@ main .main-sub-section a {
    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(31, 31, 31, 0.1) 0px 0px 0px 1px inset; */
 }
 .product-item-1:hover,
-.product-item-2:hover
+.product-item-2:hover,
+.product-item-3:hover,
+.product-item-4:hover,
+.product-item-5:hover
 {
    transform:translateY(-4px);
 }
 .product-item-1:active,
-.product-item-2:active{
+.product-item-2:active,
+.product-item-3:active,
+.product-item-4:active,
+.product-item-5:active
+{
    transform:translateY(-4px);
 }
-.product-item-1  a img,
-.product-item-2 a img
+.product-item-4 {
+  position: relative;
+}
+.product-item-4::after{
+   content: "Out-of-Stock";
+   background-color:rgb(0,122,209);
+   position: absolute;
+   top: 10px;
+   left: 5px;
+   color: #fff;
+   padding:0 6px;
+   font-size: .7rem;
+   border-radius: 3px;
+}
+
+.product-item-1 a img,
+.product-item-2 a img,
+.product-item-3 a img,
+.product-item-4 a img,
+.product-item-5 a img
 {
    width: 170px;
    height: 170px;
    text-align: center;
 }
 .product-item-1 .icon,
-.product-item-2 .icon
+.product-item-2 .icon,
+.product-item-3 .icon,
+.product-item-4 .icon,
+.product-item-5 .icon
 {
    position: relative;
 }
 .product-item-1 .icon i,
-.product-item-2 .icon i 
+.product-item-2 .icon i, 
+.product-item-3 .icon i, 
+.product-item-4 .icon i, 
+.product-item-5 .icon i 
 {
    padding:3px 0;
    text-align: center;
@@ -555,7 +591,10 @@ main .main-sub-section a {
    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(31, 31, 31, 0.1) 0px 0px 0px 1px inset;
 }
 .product-item-1 p,
-.product-item-2 p
+.product-item-2 p,
+.product-item-3 p,
+.product-item-4 p,
+.product-item-5 p
 {
    text-align: center;
    font-size: .95rem;
@@ -566,25 +605,39 @@ main .main-sub-section a {
    transform: translateY(8px);
 }
 .product-item-1 p:hover,
-.product-item-2 p:hover
+.product-item-2 p:hover,
+.product-item-3 p:hover,
+.product-item-4 p:hover,
+.product-item-5 p:hover
 {
    color: #16BCDC;
 }
 .product-item-1 .product-review,
-.product-item-2 .product-review
+.product-item-2 .product-review,
+.product-item-3 .product-review,
+.product-item-4 .product-review,
+.product-item-5 .product-review
+
 {
    position: relative;
    bottom: 12%;
    transform: translateX(-20px);
 }
 .product-item-1 .product-review i,
-.product-item-2 .product-review i {
+.product-item-2 .product-review i,
+.product-item-3 .product-review i,
+.product-item-4 .product-review i,
+.product-item-5 .product-review i
+ {
    display: inline-block;
    font-size: .8rem;
-  color: rgb(248,142,79);
+   color: rgb(248,142,79);
 }
 .product-item-1 .price,
-.product-item-2 .price
+.product-item-2 .price,
+.product-item-3 .price,
+.product-item-4 .price,
+.product-item-5 .price
 {
    display: flex;
    gap:90px;
@@ -592,7 +645,11 @@ main .main-sub-section a {
    text-align: center;
 }
 .product-item-1 .price span,
-.product-item-2 .price span {
+.product-item-2 .price span,
+.product-item-3 .price span, 
+.product-item-4 .price span,
+.product-item-5 .price span 
+{
    display: inline-block;
    font-size: 1rem;
    color: #18BDDC;
@@ -600,7 +657,10 @@ main .main-sub-section a {
    transform: translateX(-20px);
 }
 .product-item-1 .price a,
-.product-item-2 .price a
+.product-item-2 .price a,
+.product-item-3 .price a,
+.product-item-4 .price a,
+.product-item-5 .price a
 {
    display: inline-block;
    text-decoration: none;
@@ -613,7 +673,11 @@ main .main-sub-section a {
    transform: translateY(-10px);
 }
 .product-item-1 .price a:hover,
-.product-item-2 .price a:hover
+.product-item-2 .price a:hover,
+.product-item-3 .price a:hover,
+.product-item-4 .price a:hover,
+.product-item-5 .price a:hover
+
 {
    background-color:rgb(21, 161, 189);
 }
