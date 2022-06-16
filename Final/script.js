@@ -1,11 +1,12 @@
 'use strict';
-const productTabs = document.querySelectorAll(".product-tabs");
-const productBtn = document.querySelectorAll(".product-btn");
+//tabs menus js 
+const btn = document.querySelectorAll(".product-btn");
+const content = document.querySelectorAll(".content-product");
 
-productBtn.forEach((s)=>{
-    s.addEventListener("click",(tabs)=>{
-        const product = productTabs.document.querySelectorAll('[data-product]');
-        console.log(product);
-    })
-})
-b
+btn.forEach((tabs,index)=>{
+   tabs.addEventListener("click",()=>{
+      content.forEach((c)=>c.classList.remove("product-is-active"));
+      content[index].classList.add("product-is-active");
+   })
+});
+//tabs menus js 
