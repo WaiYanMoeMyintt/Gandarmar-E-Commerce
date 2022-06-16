@@ -997,5 +997,11 @@ main .main-sub-section a {
    text-align: center;
    font-size: .8rem;
 }
-
+/* content-product with css and js */
+.content-product{
+  display: none !important;
+}
+.content-product.product-is-active{
+   display: flex !important;
+}
 /* feature product section end  */
