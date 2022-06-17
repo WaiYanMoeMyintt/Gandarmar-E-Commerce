@@ -12,7 +12,7 @@
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
    <link rel="stylesheet" href="Final/style.css">
-   <title>Gandarmar E-commerce Store</title>
+   <title>NiceMarket E-commerce Store</title>
 </head>
 <body>
      <!-- navigation bars start  -->
@@ -336,16 +336,16 @@
            </div>
               
              <div class="product-banner d-flex justify-content-center pt-3 g-5 align-items-center" id="product-banner">
-               <button id="all" class="banner-active product-btn" >ALL</button>
-               <button id="women" class="product-btn" >Women's</button>
-               <button id="accessoires" class="product-btn" >Accessories</button>
-               <button id="men" class="product-btn">Men's</button>
-               <button id="fashion" class="product-btn">Fashion</button>
-               <button id="fashion" class="product-btn">Gaming</button>
+               <button id="all" data-btn = "product-btn" class="banner-active product-btn" >ALL</button>
+               <button id="women" data-btn = "product-btn" class="product-btn" >Women's</button>
+               <button id="accessoires" data-btn = "product-btn" class="product-btn" >Accessories</button>
+               <button id="men"  data-btn = "product-btn" class="product-btn">Men's</button>
+               <button id="fashion" data-btn = "product-btn" class="product-btn">Fashion</button>
+               <button id="fashion" data-btn = "product-btn" class="product-btn">Gaming</button>
              </div>
               <div id="product-content-container" class="w-100 product-content-container">
                 <div class="product-tabs">
-                  <div id="main-content-section-1" data-product = "product" class="main-content-section-1 content-product product-tabs  show d-flex hide-product  justify-content-center align-items-center text-center mt-5 g-3">
+                  <div id="product-btn" data-product = "product" class="main-content-section-1 content-product product-is-active product-tabs  show d-flex hide-product  justify-content-center align-items-center text-center mt-5 g-3">
                     <div class="sub-main-section-1">
                      <a href="#product-1"><img src="./Assets/product/xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp" width="100px" alt="product"></a>
                      <p class="product-title" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
@@ -376,9 +376,11 @@
                      <p class="product-price">$500.00</p>  
                      <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>  
                     </div>
+                    
+                    
                 </div>
                <!-- main content section 1 end -->
-               <div id="main-content-section-2" data-product = "product"  class="main-content-section-2 content-product   product-tabs  d-flex justify-content-center align-items-center text-center mt-5 g-3">
+               <div id="product-btn"   class="main-content-section-2 content-product   product-tabs  d-flex justify-content-center align-items-center text-center mt-5 g-3">
                  <div class="sub-main-section-1">
                   <a href="#product-1"><img src="./Assets/product/xproduct_6.png.pagespeed.ic.zZ9BU77Jfy.webp" width="100px" alt="product"></a>
                   <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
@@ -412,42 +414,8 @@
                  </div>
              </div>
                  <!-- main content section 2 end -->
-             <div id="main-content-section-3" data-product = "product" class="main-content-section-3 content-product   product-tabs    d-flex justify-content-center align-items-center text-center mt-5 g-3">
-               <div class="sub-main-section-1">
-                <a href="#product-1"><img src="./Assets/product/belt.png" width="100px" alt="product"></a>
-                <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
-                <p class="product-price">$500.00</p>    
-                <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>
-               </div>
-               <div class="sub-main-section-2">
-                <a href="#product-1"><img src="./Assets/product/fragment.png" width="100px" alt="product"></a>
-                <p class="product-title" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
-                <p class="product-price" >$500.00</p>  
-                <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>  
-               </div>
-               <div class="sub-main-section-3">
-                <a href="#product-1"><img src="./Assets/product/jacket.png" width="100px" alt="product"></a>
-                <p class="product-title"  >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
-                <p class="product-price">$500.00</p>  
-                <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>  
-               </div>
-               <div class="sub-main-section-4">
-                <a href="#product-1"><img src="./Assets/product/shoe.png" width="100px" alt="product"></a>
-                <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
-                <p class="product-price">$500.00</p>    
-                <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>
-               </div>
-               <div class="sub-main-section-5">
-                <a href="#product-1"><img src="./Assets/product/watch.png" width="100px" alt="product"></a>
-                <p class="product-title" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
-                <p class="product-price">$230.00</p>   
-                <a class="product-cart" href="#" id="product-cart">
-                 <i class="bi bi-bag pe-3"></i>Add to cart</a> 
-               </div>
-           </div>
-               <!-- main content section 3 end -->
 
-               <div id="main-content-section-4" data-product = "product" class="main-content-section-4 content-product   product-tabs    d-flex justify-content-center align-items-center text-center mt-5 g-3">
+               <div id="product-btn"  class="main-content-section-4 content-product product-is-active  product-tabs    d-flex justify-content-center align-items-center text-center mt-5 g-3">
                  <div class="sub-main-section-1">
                   <a href="#product-1"><img src="./Assets/product/31k0hI-y8pL._AC_UY218_-removebg-preview.png" width="100px" alt="product"></a>
                   <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
@@ -482,9 +450,44 @@
              </div>
                  <!-- main content section 4 end -->
 
-                 <div id="main-content-section-5" data-product = "product" class="main-content-section-5 content-product   product-tabs    d-flex justify-content-center align-items-center text-center mt-5 g-3">
+                 <div id="product-btn"  class="main-content-section-3 content-product   product-tabs    d-flex justify-content-center align-items-center text-center mt-5 g-3">
+                  <div class="sub-main-section-1">
+                   <a href="#product-1"><img src="./Assets/product/belt.png" width="100px" alt="product"></a>
+                   <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
+                   <p class="product-price">$500.00</p>    
+                   <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>
+                  </div>
+                  <div class="sub-main-section-2">
+                   <a href="#product-1"><img src="./Assets/product/fragment.png" width="100px" alt="product"></a>
+                   <p class="product-title" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
+                   <p class="product-price" >$500.00</p>  
+                   <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>  
+                  </div>
+                  <div class="sub-main-section-3">
+                   <a href="#product-1"><img src="./Assets/product/jacket.png" width="100px" alt="product"></a>
+                   <p class="product-title"  >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
+                   <p class="product-price">$500.00</p>  
+                   <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>  
+                  </div>
+                  <div class="sub-main-section-4">
+                   <a href="#product-1"><img src="./Assets/product/shoe.png" width="100px" alt="product"></a>
+                   <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
+                   <p class="product-price">$500.00</p>    
+                   <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>
+                  </div>
+                  <div class="sub-main-section-5">
+                   <a href="#product-1"><img src="./Assets/product/watch.png" width="100px" alt="product"></a>
+                   <p class="product-title" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
+                   <p class="product-price">$230.00</p>   
+                   <a class="product-cart" href="#" id="product-cart">
+                    <i class="bi bi-bag pe-3"></i>Add to cart</a> 
+                  </div>
+              </div>
+                  <!-- main content section 3 end -->
+
+                 <div id="product-btn"  class="main-content-section-5 content-product   product-tabs    d-flex justify-content-center align-items-center text-center mt-5 g-3">
                    <div class="sub-main-section-1">
-                    <a href="#product-1"><img src="./Assets/product/women-1.png" width="100px" alt="product"></a>
+                    <a href="#product-1"><img src="./Assets/product/women-6.png" width="100px" alt="product"></a>
                     <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
                     <p class="product-price">$500.00</p>    
                     <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>
@@ -517,7 +520,7 @@
                </div>
                    <!-- main content section 5 end -->
 
-                   <div id="main-content-section-6" data-product = "product" class="main-content-section-6 content-product   product-tabs    d-flex justify-content-center align-items-center text-center mt-5 g-3">
+                   <div id="product-btn" class="main-content-section-6 content-product   product-tabs    d-flex justify-content-center align-items-center text-center mt-5 g-3">
                      <div class="sub-main-section-1">
                       <a href="#product-1"><img src="./Assets/product/gaming-1.png" width="100px" alt="product"></a>
                       <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
@@ -537,7 +540,7 @@
                       <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>  
                      </div>
                      <div class="sub-main-section-4">
-                      <a href="#product-1"><img src="./Assets/product/gaming-4.png" width="100px" alt="product"></a>
+                      <a href="#product-1"><img src="./Assets/product/gaming-6.png" width="100px" alt="product"></a>
                       <p class="product-title" style="color: black" >Fujifilm X100T 16 MP Digital <br> Camera (Silver)</p>
                       <p class="product-price">$500.00</p>    
                       <a class="product-cart" href="#" id="product-cart"><i class="bi bi-bag pe-3"></i>Add to cart</a> </a>
