@@ -823,7 +823,6 @@ main .main-sub-section a {
 }
 .content-product:hover{
    cursor: pointer;
-  
 }
 .content-product a img{
    display:inline-block;
@@ -948,6 +947,7 @@ main .main-sub-section a {
    display: flex !important;
    transition: all .4s ease-in;
 }
+
 /* content-product with css and js */
 
 /* adjust product start */
@@ -980,6 +980,40 @@ main .main-sub-section a {
    padding:3% 0;
    height: 300px;
    transform: translateY(-5px);
+}
+.main-content-section-4 .sub-main-section-1{
+   position: relative;
+}
+.main-content-section-4 .sub-main-section-1::after{
+   content: "STOCK";
+   width: 60px;
+   height: 26px;
+   color: #fff;
+   background-color: #2A73A7;
+   padding: 4px 8px;
+   border-radius: 4px;
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   text-align: center;
+   font-size: .8rem;
+}
+.main-content-section-4 .sub-main-section-5{
+   position: relative;
+}
+.main-content-section-4 .sub-main-section-5::after{
+   content: "SALE";
+   width: 60px;
+   height: 26px;
+   color: #fff;
+   background-color: #B82E30;
+   padding: 4px 8px;
+   border-radius: 4px;
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   text-align: center;
+   font-size: .8rem;
 }
 .main-content-section-4 .sub-main-section-3{
    height: 310px;
