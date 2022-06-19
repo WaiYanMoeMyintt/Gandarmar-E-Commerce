@@ -1130,7 +1130,7 @@ main .main-sub-section a {
 
 /* product-categories section start  */
 .product-categories{
-    transform: translateY(1.5%);
+    transform: translateY(30%);
 }
 .product-categories .container-fluid .stocks-content-1{
    gap:15px;
