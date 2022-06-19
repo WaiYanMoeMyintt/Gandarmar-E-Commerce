@@ -17,7 +17,6 @@
 }
 html{
    scroll-behavior: smooth;
-   /* overflow-x: hidden; */
 }
 ::-webkit-scrollbar{
    width:12px;
@@ -1131,14 +1130,9 @@ main .main-sub-section a {
 
 /* product-categories section start  */
 .product-categories{
-    height: 1000vh;
     transform: translateY(1.5%);
-    background-color: red;
 }
-
 .product-categories .container-fluid .stocks-content-1{
-   display:flex;
-   flex-direction: row;
    gap:15px;
 }
 .stocks-content-1 .sub-stock-1 .market-img-1,
@@ -1149,11 +1143,11 @@ main .main-sub-section a {
      height: auto;
      border-radius: 20px;
      margin: 5px 0;
-     transition:  opacity .3s ease-
+     transition:  opacity .3s ease;
 }
 .stocks-content-1 .sub-stock-1 .market-img-1:hover,
 .stocks-content-1 .sub-stock-1 .market-img-2:hover{
-  opacity: .7;
+  opacity: .9;
 }
 .sub-stock-1 .market-link-1,
 .sub-stock-1 .market-link-2
@@ -1175,13 +1169,13 @@ main .main-sub-section a {
 .stocks-content-1 .sub-stock-2 img{
    display: inline-block;
    max-width: 300px;
-   height:360px;
+   height:366px;
    border-radius: 20px;
-   transform: translateY(10px);
-   transition: opacity .3s ease;
+   transform: translateY(6px);
+   transition:  opacity .3s ease;
 }
 .stocks-content-1 .sub-stock-2 img:hover{
-   opacity: .7;
+   opacity: .9;
 }
 .sub-stock-2 a {
    display:inline-block;
@@ -1196,15 +1190,68 @@ main .main-sub-section a {
    border-radius: 2px;
    text-decoration: none;
    width: 45%;
-   transform: translate(60px,-70px);
+   transform: translate(80px,-70px);
 }
+/* finish stock 1 end  */
+.stocks-content-2{
+  margin:0 30px;
+}
+.stocks-content-2 .sub-stock-3  .market-img-3{
+   display: inline-block;
+   max-width: 300px;
+   height:366px;
+   border-radius: 20px;
+   transform: translateY(6px);
+   transition: opacity .3s ease;
+}
+.sub-stock-3 .market-img-3:hover{
+   opacity: .9;
+}
+.sub-stock-3 a{
+   display:inline-block;
+   font-size: 1rem;
+   color: #000;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: .5px;
+   background-color: #fff;
+   padding:6px 16px;
+   border-radius: 2px;
+   text-decoration: none;
+   width: 45%;
+   transform: translate(80px,-70px);
+}
+/* finish stock 2 end  */
 
-
-
-
-
-
-
+.stocks-content-3 .sub-stock-4  img{
+   display: inline-block;
+   max-width: 330px;
+   height: auto;
+   border-radius: 20px;
+   margin: 5px 0;
+   transition:  opacity .3s ease;
+   transition: opacity .3s ease;
+}
+.sub-stock-4 img:hover{
+   opacity: .9;
+}
+.stocks-content-3 .sub-stock-4 a{
+   display:inline-block;
+   font-size: 1rem;
+   color: #000;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: .5px;
+   background-color: #fff;
+   padding:6px 16px;
+   border-radius: 2px;
+   text-decoration: none;
+   width: 45%;
+   transform: translate(80px,-70px);
+}
+/* finish stock 3 end  */
 
 
 
