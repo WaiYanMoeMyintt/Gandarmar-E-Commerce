@@ -17,6 +17,7 @@
 }
 html{
    scroll-behavior: smooth;
+   /* overflow-x: hidden; */
 }
 ::-webkit-scrollbar{
    width:12px;
@@ -1252,12 +1253,22 @@ main .main-sub-section a {
    transform: translate(80px,-70px);
 }
 /* finish stock 3 end  */
-
-
-
-
-
-
-
-
 /* product-categories section  end */
+
+.sale-product{
+    height: 1000vh;
+    background-color: red;
+    transform: translateY(2%);
+}
+.sale-product-title p{
+   font-size: 24px;
+   letter-spacing: .4px;
+   width:30%;
+   transform: translateX(-20px);
+}
+.sale-product-container .sale-product-section-1 .sale-content-1{
+   position: relative;
+}
+.sale-content-1{
+   background-color: blue;
+}
