@@ -1254,10 +1254,11 @@ main .main-sub-section a {
 }
 /* finish stock 3 end  */
 /* product-categories section  end */
+/* 
+sale product section start  */
 
 .sale-product{
     height: 1000vh;
-    background-color: red;
     transform: translateY(2%);
 }
 .sale-product-title p{
@@ -1266,9 +1267,55 @@ main .main-sub-section a {
    width:30%;
    transform: translateX(-20px);
 }
-.sale-product-container .sale-product-section-1 .sale-content-1{
-   position: relative;
+.sale-product-title p span {
+   display: inline-block;
+   transform: translateY(4px);
 }
-.sale-content-1{
-   background-color: blue;
+.sale-product-container a {
+   cursor: pointer;
 }
+.sale-product-container .sale-product-section-1 .card,
+.sale-product-container .sale-product-section-2 .card,
+.sale-product-container .sale-product-section-3 .card,
+.sale-product-container .sale-product-section-4 .card
+{
+   border-radius: 5px;
+   height: 355px;
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.card img{
+   transition: opacity .2s ease;
+}
+.card img:hover{
+   opacity: .8;
+}
+.sale-product-section-1 .card h5,
+.sale-product-section-2 .card h5,
+.sale-product-section-3 .card h5,
+.sale-product-section-4 .card h5
+{
+   margin-top: 20px;
+   font-weight: 600;
+   cursor: pointer;
+   font-size: 1.2rem;
+}
+.card h5:hover{
+   color: #16BCDC;
+}
+.sale-product-section-1 .card .sale-link,
+.sale-product-section-2 .card .sale-link,
+.sale-product-section-3 .card .sale-link,
+.sale-product-section-4 .card .sale-link
+{
+   padding-top: 16px;
+}
+.sale-link a {
+     color: #000;
+     font-weight: 550;
+}
+.sale-link a:hover{
+   color: #18BDDC;
+}
+
+/* 
+sale product section end  */
