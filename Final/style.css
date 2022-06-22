@@ -1258,7 +1258,6 @@ main .main-sub-section a {
 sale product section start  */
 
 .sale-product{
-    height: 1000vh;
     transform: translateY(2%);
 }
 .sale-product-title p{
@@ -1319,3 +1318,9 @@ sale product section start  */
 
 /* 
 sale product section end  */
+
+/* product slides container start */
+.product-slides-container  {
+   transform: translateY(1%);
+   height: 1000vh;
+}
