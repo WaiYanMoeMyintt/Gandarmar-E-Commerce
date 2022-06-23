@@ -1324,12 +1324,8 @@ sale product section end  */
    transform: translateY(3%);
    height: 1000vh;
 }
-/* .product-slides-container h1{
-   color: red;
-   animation: productSlider 2s ease-in .2s infinite alternate;
-} */
 .product-slides-container .product-slides-image {
-   animation: productSlider 20s ease-in-out 0.4s infinite;
+   /* animation: productSlider 20s ease-in-out 0.4s infinite; */
    margin-left: -14%;
    transition: animation .12s ease-in;
 }
@@ -1348,3 +1344,5 @@ sale product section end  */
    transform: translateX(11%);
  }
 }
+
+/* product slides container end */
