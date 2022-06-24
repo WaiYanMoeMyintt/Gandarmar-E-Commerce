@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     cookie_content.style.display = "none";
     setTimeout(()=>{
       cookie_content.style.display = "block";
-  },2500);
+  },3500);
 })
 cookie_btn.addEventListener("click",()=>{
    cookie_content.style.display = "none";
 });
 
-
+//cookies toggle
