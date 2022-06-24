@@ -15,3 +15,19 @@ btn.forEach((tabs,index)=>{
    })
 });
 //tabs menus js 
+
+//cookies toggle
+const cookie_btn = document.querySelector("#cookie-btn");
+const cookie_content = document.querySelector(".cookies-toggle");
+
+document.addEventListener("DOMContentLoaded",()=>{
+    cookie_content.style.display = "none";
+    setTimeout(()=>{
+      cookie_content.style.display = "block";
+  },2500);
+})
+cookie_btn.addEventListener("click",()=>{
+   cookie_content.style.display = "none";
+});
+
+
