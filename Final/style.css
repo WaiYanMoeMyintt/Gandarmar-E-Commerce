@@ -1527,6 +1527,9 @@ footer .product-footer-container {
    color: #fff;
    font-weight: normal;
 }
+.cookies-paragraph a:hover{
+   color: #0eacd8;
+}
 .cookies-links a {
    display: block;
    text-decoration: none;
