@@ -1542,6 +1542,7 @@ footer .product-footer-container {
    padding:17px 55px;
    font-weight: bold;
    letter-spacing: .6px;
+   cursor: pointer;
 }
 .cookies-links a:hover{
    background-color: #3ACDF6;
