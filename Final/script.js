@@ -31,3 +31,20 @@ cookie_btn.addEventListener("click",()=>{
 });
 
 //cookies toggle
+
+
+//popup background image
+const popup = document.querySelector(".popup-background");
+const popupBtn = document.querySelector(".popup-btn-active");
+
+document.addEventListener("DOMContentLoaded",()=>{
+      //set time out popup
+      setTimeout(()=>{popup.classList.remove("popup-active");},
+      5000);
+      //set time out popup
+
+      //when user close popup panel
+      popupBtn.addEventListener("click",()=>{
+         popup.classList.add("popup-active");
+      });
+})
