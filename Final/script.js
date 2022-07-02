@@ -33,7 +33,7 @@ cookie_btn.addEventListener("click",()=>{
 //cookies toggle
 
 
-//popup background image
+// popup background image
 const popup = document.querySelector(".popup-background");
 const popupBtn = document.querySelector(".popup-btn-active");
 
@@ -48,3 +48,23 @@ document.addEventListener("DOMContentLoaded",()=>{
          popup.classList.add("popup-active");
       });
 })
+
+//product slider button
+
+const sliderMenu = document.querySelector(".product-slider");
+const sliderItem = document.getElementsByClassName("product-slider-item");
+
+//next button slider
+function nextButton(){
+   sliderMenu.append(sliderItem[0]);
+}
+//prev button slider
+function prevButton(){
+   sliderMenu.prepend(sliderItem[sliderItem.length-1]);
+}
+//product slider button
+//tooltips
+$(function () {
+   $('[data-toggle="tooltip"]').tooltip()
+ })
+ //tooltips
