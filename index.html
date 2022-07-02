@@ -16,7 +16,6 @@
    <title>NiceMarket E-commerce Store</title>
 </head>
 <body>
-
       <!-- subscribe popup background card start  -->
         <div class="popup-background popup-active">
           <div class="container d-flex justify-content-center align-items-center">
@@ -82,7 +81,7 @@
           <div class="nav-links-container">
             <ul class="navbar-nav">
                <li class="nav-item">
-                 <a class="nav-link" aria-current="page" href="#account">My Account</a>
+                 <a class="nav-link" aria-current="page" href="./account/login.html">My Account</a>
                </li>
                <li class="nav-item">
                  <a class="nav-link" href="#">About us</a>
@@ -213,9 +212,21 @@
              <div class="product-title">
                <p class="fw-bold text-black">New Arrival Products</p>
              </div>
-             <div class="row col-lg-6 col-lg-4 product-container m-4 d-flex flex-row flex-wrap justify-content-evenly align-items-center">
+             <div class="product-slider-btn w-100 d-flex justify-content-end align-items-center">
+              <div class="next-slider">
+                <button class = "data-toggle="tooltip" data-placement="top" title="next"" onclick="prevButton()">
+                  
+                </button>
+              </div>
+              <div class="prev-slider">
+                <button class = "data-toggle="tooltip" data-placement="top" title="prev"" onclick="nextButton()">
+                </button>
+             
+              </div>
+             </div>
+             <div class="row col-lg-6 col-lg-4 product-container m-5 d-flex flex-row product-slider align-items-center">
                <!-- product-item-1 start -->
-               <div class="product-item-1">
+               <div class="product-item-1  m-lg-3 g-md-5  product-slider-item">
                 <div class="icon">
                   <i class="bi bi-heart"></i>
                  </div>
@@ -237,7 +248,7 @@
              <!-- product-item-1 end -->
 
               <!-- product-item-2 start -->
-             <div class="product-item-2 m-lg-3 g-md-5">
+             <div class="product-item-2 m-lg-3 g-md-5  product-slider-item">
               <div class="icon">
                 <i class="bi bi-heart"></i>
                </div>
@@ -259,7 +270,7 @@
             <!-- product-item-2 end -->
             
             <!-- product item 3 start  -->
-            <div class="product-item-3 ">
+            <div class="product-item-3 m-lg-3 g-md-5   product-slider-item">
               <div class="icon">
                 <i class="bi bi-heart"></i>
                </div>
@@ -281,7 +292,7 @@
             <!-- product item 3 end -->
             <!-- product item 4 start  -->
 
-            <div class="product-item-4 m-lg-3 g-md-5">
+            <div class="product-item-4 m-lg-3 g-md-5  product-slider-item">
               <div class="icon">
                 <i class="bi bi-heart"></i>
                </div>
@@ -304,7 +315,7 @@
          
          <!-- product-item 5 start  -->
 
-         <div class="product-item-5 ">
+         <div class="product-item-5 m-lg-3 g-md-5   product-slider-item">
           <div class="icon">
             <i class="bi bi-heart"></i>
            </div>
@@ -324,6 +335,120 @@
          </div>
         </div>  
          <!-- product-item 5 end  -->
+
+
+           <!-- product-item-6 start -->
+           <div class="product-item-1 m-lg-3 g-md-5  product-slider-item">
+            <div class="icon">
+              <i class="bi bi-heart"></i>
+             </div>
+              <a href="#product-item-1"><img width="180px" height="180px" src="Assets/product-item-6.jpg" alt="game pad"></a>
+            <p>Ps5 controller Gamepad</p>
+           </p>
+           <div class="product-review">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+           </div>
+           <div class="price">
+             <span>$32.53</span>
+             <a href="#" class="price-btn" id="price-btn">Buy</a>
+           </div>
+           </div>
+         <!-- product-item-6 end -->
+
+          <!-- product-item-7 start -->
+         <div class="product-item-2 m-lg-3 g-md-5  product-slider-item">
+          <div class="icon">
+            <i class="bi bi-heart"></i>
+           </div>
+            <a href="#product-item-2"><img width="180px" height="180px" src="Assets/product-item-7.jpg" alt="game pad"></a>
+          <p>Smart Watch for Ios Phones</p>
+         </p>
+         <div class="product-review">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+         </div>
+         <div class="price">
+           <span>$58.55</span>
+           <a href="#" class="price-btn" id="price-btn">Buy</a>
+         </div>
+        </div>
+        <!-- product-item-7 end -->
+        
+        <!-- product item 8 start  -->
+        <div class="product-item-3 m-lg-3 g-md-5   product-slider-item">
+          <div class="icon">
+            <i class="bi bi-heart"></i>
+           </div>
+            <a href="#product-item-3"><img width="180px" height="180px" src="Assets/product-item-8.jpg" alt="perfume for men"></a>
+          <p>Raw Pheromone  Perfume</p>
+         </p>
+         <div class="product-review">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+         </div>
+         <div class="price">
+           <span>$45.27</span>
+           <a href="#" class="price-btn" id="price-btn">Buy</a>
+         </div>
+        </div>
+        <!-- product item 8 end -->
+        <!-- product item 9 start  -->
+
+        <div class="product-item-4 m-lg-3 g-md-5  product-slider-item">
+          <div class="icon">
+            <i class="bi bi-heart"></i>
+           </div>
+            <a href="#product-item-4"><img width="180px" height="180px" src="Assets/product-item-9.jpg" alt="nike shoe"></a>
+          <p>Nike Men's Air Max Shoe</p>
+         </p>
+         <div class="product-review">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+         </div>
+         <div class="price">
+           <span>$45.27</span>
+           <a href="#" class="price-btn" id="price-btn">Buy</a>
+         </div>
+        </div>          
+     <!-- product item 9 end -->
+     
+     <!-- product-item 10 start  -->
+
+     <div class="product-item-5 m-lg-3 g-md-5    product-slider-item">
+      <div class="icon">
+        <i class="bi bi-heart"></i>
+       </div>
+        <a href="#product-item-5"><img width="180px" height="180px" src="Assets/product-item-10.jpg" alt="TV"></a>
+      <p>Cade Miracle Irwaks</p>
+     </p>
+     <div class="product-review">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+     </div>
+     <div class="price">
+       <span>$45.27</span>
+       <a href="#" class="price-btn" id="price-btn">Buy</a>
+     </div>
+    </div>  
+     <!-- product-item 10 end  -->
+
+
         </div>
          </div>
        </section>
