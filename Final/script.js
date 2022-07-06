@@ -68,3 +68,19 @@ $(function () {
    $('[data-toggle="tooltip"]').tooltip()
  })
  //tooltips
+
+ //shop categories bars 
+ const shopMenu = document.querySelector(".shop-bars-active");
+ const shopBars = document.querySelector(".menu-bar-active");
+ const bars     = document.querySelector(".bar-active");
+document.addEventListener("DOMContentLoaded",()=>{
+   shopMenu.addEventListener("click",()=>{
+      //when user click menu bar and close btn
+      shopBars.classList.remove("menu-bar-active");
+      document.querySelector(".bar-active").addEventListener("click",(s)=>{
+             if(s!==undefined || s!==null){
+                shopBars.classList.add("menu-bar-active");
+             }
+      });  
+ });
+});
